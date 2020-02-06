@@ -12,7 +12,7 @@ angular.module('ngPluralizeFilter', []).filter('pluralize', function() {
 
     var rules = [
       {regex: /octopus/gi, suffix: 'octopuses'},
-      {regex: /person/gi, suffix: 'people'},
+      {regex: /^person$/gi, suffix: 'people'},
       {regex: /ox/gi, suffix: 'oxen'},
       {regex: /goose/gi, suffix: 'geese'},
       {regex: /mouse/gi, suffix: 'mice'},
